@@ -231,6 +231,30 @@
       "type": "kalzada_section2",
       "settings": {
       }
+    },
+    "16597887093a1165cd": {
+      "type": "kalzada_section3",
+      "settings": {
+        "kalzada_top_heading": "",
+        "kalzada_top_subheading": ""
+      }
+    },
+    "1659788717f006b577": {
+      "type": "kalzada_section4",
+      "settings": {
+      }
+    },
+    "1659788722d6bd6e90": {
+      "type": "kalzada-section5",
+      "settings": {
+        "kalzada_top_heading": "",
+        "kalzada_top_subheading": ""
+      }
+    },
+    "165978872909ef2c93": {
+      "type": "kalzada-section6",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -242,6 +266,10 @@
     "multicolumn",
     "16597552064aa6e11f",
     "16597552158897e15b",
-    "165975522271627860"
+    "165975522271627860",
+    "16597887093a1165cd",
+    "1659788717f006b577",
+    "1659788722d6bd6e90",
+    "165978872909ef2c93"
   ]
 }
