@@ -1,0 +1,120 @@
+<section class="Section5" id="Section5">
+    <div id="sec5textcont">
+        <p id="sec5text1">@Loremipsumdolorsitamet</p>
+        <p id="sec5text2">#LOREMIPSUM</p>
+    </div>
+</section>
+<section class="Section52" id="Section52">
+    <div id="sec5prd">
+
+        {% for product in collections.all.products %}
+            {% for collection in product.collections %}
+              {% if collection.title == 'Other Products' %} 
+                <div class="prdsDivSec5">
+
+                        <img class="prodImgSec5" src="{{product.featured_image|image_url:medium}}" alt="products"/>
+                    
+                </div>
+            {% endif %}
+        {% endfor %} 
+     {% endfor %}
+    </div>
+</section>
+
+<style>
+    .Section5{
+        display:flex;
+        justify-content:center;
+        background:#ffffff;
+        flex-flow:column;
+        align-items:center; 
+        padding-top:40px;
+    }
+
+    p#sec5text1{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #000000;
+        padding:0px;
+        margin:0px;
+    }
+    
+    p#sec5text2{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+
+        opacity: 0.67;
+        padding:0px;
+        margin:0px;
+    }
+
+    /*prd*/
+    .Section52{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    #sec5prd{
+        width:80%;
+        display:flex;
+        justify-content:space-evenly;
+        padding:20px;
+        background:#ffffff;
+        flex-flow:row wrap;
+    }
+
+    .prdsDivSec5{
+        width: 207.0px;
+        height: 207.03px;
+        margin-bottom:20px;
+    }
+    
+    
+    img.prodImgSec5{
+        width: 207.03px;
+        height: 207.03px;
+        mix-blend-mode: multiply;
+    }
+
+   
+</style>
+
+{% schema %}
+{
+    "name": "Kalzada Section5",
+    "settings":[
+        {
+            "type":"text",
+            "id":"kalzada_top_heading",
+            "label":"Maintext"
+        },
+        {
+            "type":"text",
+            "id":"kalzada_top_subheading",
+            "label":"Subtext"
+            }
+    ],
+    "presets":[
+        {
+        "name":"Kalzada Section5",
+        "category": "Text"
+        }
+    ]
+}
+{% endschema %}

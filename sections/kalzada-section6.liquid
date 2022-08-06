@@ -1,0 +1,125 @@
+<section class="Section6" id="Section6">
+    <p id="sec6text1">Get 10% off your First Order</p>
+    <p id="sec6text2">Join our newsletter to get exclusive contents, offers, services and first access to products.</p>
+    <div id="sec6contactcont">
+        <input id="sec6email" type="email" placeholder="Your email address here"/>
+        <button id="sec6submitbtn">Submit</button>
+    </div>
+    <div class="sec6checkboxcont">
+        <input type="checkbox" id="cb1" />
+        <label for="cb1">Receive Updates for 420 Products</label>
+        <input type="checkbox" id="cb2" />
+        <label for="cb2">Receive Updates for E-cig Products  </label>
+</section>
+
+<style>
+    
+    .Section6{
+        display:flex;
+        /*justify-content:center;*/
+        flex-flow:column;
+        height:332px;
+        background:#74B6C7;
+        align-items: center;
+    }   
+
+    p#sec6text1{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        margin:40px 0px 0px 0px;
+        padding:0px;
+        color: #FFFFFF;
+    }
+
+    p#sec6text2{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    #sec6contactcont{
+        box-sizing: border-box;
+        width: 865px;
+        height: 73px;
+        border: 1px solid #FFFFFF;
+        display:flex;
+        justify-content:space-between;
+        margin-bottom:10px;
+    }
+
+    input#sec6email{
+        background:none;
+        padding:15px 60px;
+        width:70%;
+        border:none;
+    }
+    
+    input#sec6email::placeholder{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+
+        opacity: 0.78;
+    }
+
+    button#sec6submitbtn{
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+ 
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background:none;
+        padding:15px 60px;
+        width:25%;
+        margin:10px;
+
+        background: #313A47;
+        border: 2.99139px solid #313A47;
+    }
+
+    .sec6checkboxcont{
+        display:flex;
+        flex-flow:row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec6checkboxcont label{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    
+    .sec6checkboxcont input{
+        width: 25px;
+        height: 26px;
+        margin-top:10px;
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Kalzada Section6",
+    "settings":[],
+    "presets":[
+        {
+        "name":"Kalzada Section6",
+        "category": "Text"
+        }
+    ]
+}
+{% endschema %}
