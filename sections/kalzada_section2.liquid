@@ -1,0 +1,259 @@
+<section class="Section2" id="Section2">
+    <div><p class="tagline" id="sec2tagline">DEALS OF THE DAY</p></div>
+    <div id="Section2_main">
+        <div id="Section2_left">
+            <div id="corner_tl">
+                <p id="sec2frame1">DEALS</p>
+                <p id="sec2frame2">DEALS</p>
+                <p id="sec2frame3">DEALS</p>
+                <p id="sec2frame4">DEALS</p>
+                <img id="sec2vapeimg" src="{{'image_15.png'|asset_url|image_tag:'vape'}}"/>
+                <div id="eclipse1"></div>
+                <div id="eclipse2"></div>
+            </div>
+        </div>
+        <div id="Section2_right">
+            <div id="corner_tr">
+                <p id="sec2paper1">Lorem ipsum dolor sit amet</p>
+                <div id="stars">
+                    <span class="fa fa-star checked fa-xs"></span>
+                    <span class="fa fa-star checked fa-xs"></span>
+                    <span class="fa fa-star checked fa-xs"></span>
+                    <span class="fa fa-star checked fa-xs"></span>
+                    <span class="fa fa-star checked fa-xs"></span>
+                </div>
+                <div id="sec2price"><span id="sec2paper2">$99.95&nbsp;</span><span id="sec2paper2g">$120.00</span></div>
+                <div id="sec2textdiv">
+                    <p id="sec2text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    <p id="sec2text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis</p>
+                    <p id="sec2text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .Section2{
+        height:883px;
+        background-color:#313A47;
+        padding:30px 5% 0px 5%;
+    }
+
+    #Section2_main{
+        display:flex;
+    }
+
+    #Section2_main div{
+        display:flex;
+        width:50%;
+        
+    }
+
+    .Section2 #Section2_left{
+        /*border:1px solid white;*/
+    }
+
+    .Section2 #Section2_right{
+        width:40%;
+        /*border:1px solid blue;*/
+    }
+
+    #sec2tagline{
+        width:100%;
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        padding-left:5%;
+        color: #FFFFFF;
+    }
+
+    div#corner_tl{
+        position: relative;
+        width: 90%;
+        margin: 2em auto;
+        color: #fff;
+        background: linear-gradient(180deg, #434E5F 0%, rgba(79, 91, 108, 0) 100%);
+        overflow: hidden;
+        display: flex;
+        flex-direction:column;
+        padding: 40px 0;
+        height:750px;
+    }
+
+    div#corner_tl:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-width: 0 0 64px 64px;
+        border-style: solid;
+        border-color: #434E5F #313A47;
+        display: block;
+        width: 0;
+    }
+
+    #corner_tl p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 120px;
+        text-align: center;
+        letter-spacing: 0.025em;
+        padding:0;
+        margin:0;
+        color: rgba(255, 255, 255, 0.3);
+        line-height:120px;
+    }
+
+    #corner_tl p#sec2frame2{
+        color: rgba(255, 255, 255, 0.2);   
+    }
+
+    #corner_tl p#sec2frame3{
+        color: rgba(255, 255, 255, 0.1);   
+    }
+
+    #corner_tl p#sec2frame4{
+        color: rgba(255, 255, 255, 0.05);   
+    }
+
+    img#sec2vapeimg{
+        position:absolute;
+    }
+
+    div#eclipse1{
+        position:relative;
+        bottom:-100px;
+        left:-30;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.28) 16.14%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    div#eclipse2{
+        position:relative;
+        bottom:-20px;
+        left:200px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.28) 16.14%, rgba(0, 0, 0, 0) 100%);
+    }
+
+
+    div#corner_tr{
+        position: relative;
+        width: 100%;
+        margin: 2em auto;
+        color: #fff;
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction:column;
+        padding: 40px 0;
+        height:750px;
+        outline: 15px solid #F2F2F2;
+        outline-offset: -15px;
+        box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    div#corner_tr:before{
+        content: "";
+        position: absolute;
+        top: -0px;
+        left: 0px;
+        border-width: 0 0 64px 64px;
+        border-style: solid;
+        border-color: #434E5F #313A47;
+        display: block;
+        width: 0;
+    }
+
+
+    #corner_tr p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        /* or 100% */
+
+        text-align: center;
+
+        color: #2B2B2B;
+    }
+
+    #sec2paper1{
+        width:100%;
+    }
+
+    .checked {
+        color: #74B6C7;
+        display:inline;
+      }
+    
+    div#stars{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    #sec2paper2, #sec2paper2g{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        /* or 144% */
+
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+
+        color: #74B6C7;
+
+    }
+
+    #sec2paper2g{
+        font-weight: 600;
+        font-size: 12px;
+        line-height:28px;
+        color: gray;
+    }
+
+    div#sec2price{
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    div#sec2textdiv{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        padding:0 10%;
+    }
+
+    p#sec2text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        /* or 175% */
+
+        text-align: center;
+
+        color: #2B2B2B;
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Kalzada Section2",
+    "settings":[],
+    "presets":[
+        {
+        "name":"Kalzada Section2",
+        "category": "Text"
+        }
+    ]
+}
+{% endschema %}

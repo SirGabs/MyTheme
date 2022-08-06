@@ -1,0 +1,120 @@
+<section class="Banner" id="Banner">
+    <div id="Banner_left_cont">
+        <p class="tagline">TAGLINE HERE</p>
+        <p class="tagline2">what e-cig is best for me?</p>
+        <p class="tagline3">FIND OUT!</p>
+        <p class="tagline4">orem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor</p>
+        <button class="bnwButton">ADD TO CART</button>
+    </div>
+</section>
+<style>
+    
+    .Banner{
+        height:698px;
+        background-image: url({{'index-slide-01_2.png'|asset_url|image_tag:'Logo'}});
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+
+    #Banner_left_cont{
+        height:100%;
+        width:50%;
+        padding-left:70px;
+        padding-top:110px;
+        margin-left:100px;
+    }
+
+    #Banner_left_cont p{
+        font-family: 'Montserrat';
+        color: #FFFFFF;
+    }
+
+    .tagline{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        /* identical to box height, or 17px */
+        letter-spacing: 0.05em;   
+        padding:0px;
+        margin:0px;   
+    }
+
+
+    .tagline2{
+        font-family: 'Audiowide';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        padding:0px;
+        margin:0px;
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    
+    }
+
+    .tagline3{
+        font-family: 'Audiowide';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 96px;
+        padding:0px;
+        margin:0px;
+
+        letter-spacing: -0.03em;
+
+        color: #FFFFFF;
+    
+    }
+
+    .tagline4{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        padding:0px;
+        margin:0px;
+
+        letter-spacing: -0.025em;
+
+        color: #FFFFFF;
+    }
+
+    .bnwButton{
+        /* btn text */
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15.9541px;
+        line-height: 28px;
+        /* or 175% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background:none;
+        padding:10px 30px;
+        margin-top:80px;
+
+        box-sizing: border-box;
+        border: 1.5px solid #FFFFFF;
+        
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Kalzada Banner",
+    "settings":[],
+    "presets":[
+        {
+        "name":"Kalzada Banner",
+        "category": "Text"
+        }
+    ]
+}
+{% endschema %}

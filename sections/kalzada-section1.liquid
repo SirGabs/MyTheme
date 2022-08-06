@@ -1,0 +1,85 @@
+<section class="Section1" id="Section1">
+    <div class="Section1_cont">
+        <div class="Section1_item">
+            <i class="fa-solid fa-truck fa-xl"></i>
+            <p class="Section_maintext">Discrete Shipping</p>
+            <p class="Section_subtext">On all orders above 50</p>
+        </div>
+        <div class="Section1_item">
+            <i class="fa-solid fa-rotate-left fa-xl"></i>
+            <p class="Section_maintext">In-house Warranty</p>
+            <p class="Section_subtext">Learn More</p>
+        </div>
+        <div class="Section1_item">
+            <i class="fa-solid fa-phone fa-xl"></i>
+            <p class="Section_maintext">Call us anytime</p>
+            <p class="Section_subtext">03 8201 8741</p>
+        </div>
+        <div class="Section1_item">
+            <i class="fa-solid fa-shield-halved fa-xl"></i>
+            <p class="Section_maintext">Pick Up Order In Store</p>
+            <p class="Section_subtext">7 Years in Business, No Knockoffs & 100% Genuine  </p>
+        </div>
+    </div>
+</section>
+<style>
+    .Section1 .Section1_cont{
+        display:flex;
+        justify-content:space-evenly;
+        height:172px;
+        padding-top:28px;
+        background:#F5F5F5;
+    }
+    
+    .Section1 .Section1_cont .Section1_item{
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .Section1 .Section1_cont .Section1_item i{
+        color:#2B2B2B;
+        
+    }
+
+    .Section1 .Section1_cont .Section1_item p{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        margin:0px;
+        text-align: center;
+
+        color: #414141;
+    }
+
+    .Section1 .Section1_cont .Section1_item p.Section_subtext{
+        font-size: 14px;
+        margin:0px;
+        color: #474747;
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Kalzada Section1",
+    "settings":[
+        {
+            "type":"text",
+            "id":"kalzada_top_heading",
+            "label":"Maintext"
+        },
+        {
+            "type":"text",
+            "id":"kalzada_top_subheading",
+            "label":"Subtext"
+            }
+    ],
+    "presets":[
+        {
+        "name":"Kalzada Section1",
+        "category": "Text"
+        }
+    ]
+}
+{% endschema %}
